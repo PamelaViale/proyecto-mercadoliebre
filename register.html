@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario - Nuevo Usuario</title>
+</head>
+<body>
+    
+<section id="formulario-registro">
+    <fieldset id="datos-principales">
+        <input type="text" id="nombre-apellido" name="Nombre y apellido" placeholder="Coloca tu nombre y apellido" required>
+        <input type="text" id="nombre-usuario" name="Nombre de usuario" placeholder="Nombre de usuario" required>
+        <input type="text" id="email" name="Email" placeholder="Email" required>
+        <label for="" id="fecha-nacimiento">Fecha de Nacimiento</label> 
+        <input type="date" id="calendario" name="fecha-de-nacimiento" required>
+        <input type="text" id="domicilio" name="Domicilio" placeholder="Domicilio" required>
+    </fieldset>
+    <fieldset id="datos-perfil">
+        <label id="perfil-usuario" for="">Perfil del Usuario</label>
+        <input type="radio" id="comprador-vendedor" name="terminos" value="buyer" />Comprador
+        <input type="radio" id="vendedor-comprador" name="terminos" value="seller"  />Vendedor
+    </fieldset>
+   
+    <fieldset id="datos-intereses">
+        <label for="">Intereses</label> 
+        <input type="checkbox"  name="civil" value="Electro" checked="checked" /><legend>Electro</legend> 
+        <input type="checkbox"  name="civil" value="Moda"/><legend>Moda</legend>
+        <input type="checkbox"  name="civil" value="Hogar"/><legend>Hogar</legend>
+        <input type="checkbox"  name="civil" value="Jugueteria"/><legend>Jugetería</legend>
+        <input type="checkbox"  name="civil" value="Sana"/><legend>Vida Sana</legend>
+    </fieldset>
+
+
+    <fieldset>
+        <input type="file" name="foto-de-usuario" id="foto de usuario" >
+    </fieldset>
+
+    <div class="boton">
+        <button>Enviar</button>
+    </div>
+
+    <div>
+        <button>Borrar</button>
+    </div>
+</section>
+    
+</body>
+</html>

@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Fredoka+One&family=Noto+Serif+Gujarati:wght@200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Silkscreen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+:root{
+    --Amarillo: #EAC926;
+    --gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Azul: #03264C;
+    --Verde: #39b54a;
+    --Celeste: #1259c3;
+     --font-family: 'Roboto', sans-serif;
+}
+
+
+/* Header Cabecera de la web principio */
+header{
+    background-color: var(--Amarillo);
+}
+
+.menu-logo-busqueda{
+   
+    display: flex;
+    justify-content: space-evenly;
+   
+    }
+
+.img-logo-mercadoliebre{
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+
+/* .img-logo-mercadoliebre> img{
+    width: 150vw;
+    
+} */
+
+.barra-busqueda-mercadoliebre{
+    width: 50vw;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.barra-busqueda-mercadoliebre > input{
+    width: 40vw;
+    height: 5vw;
+    border: solid 1px black;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.fa-magnifying-glass{
+    width: 6vw;
+    height:6vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: solid 1px black;
+  
+}
+
+
+.compra-en-cuotas{
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px;
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
+.nav-ofertas-cuenta{
+    display: none;
+}
+
+
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    
+} 
+
+
+.burger-menu i{
+    width: 10vw;
+    padding: 10px;
+    background-color: #03264C;
+    color: white;
+    border-radius: 5px;
+    margin: 20px 0;
+    
+
+}
+
+.banner > img{
+    display: inline-block;
+    width: 100vw;
+}
+
+/* Sección Main Principio */
+
+main{
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+     background-color: var(--Gris-claro);
+   
+    
+}
+
+#ultimas-visitas, #ofertas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+}
+
+
+
+#ultimas-visitas > h2, #ofertas > h2{
+    font-size: 18px;
+    margin: 20px;
+    color: var(--gris-oscuro);
+}
+
+
+.img-productos img {
+    width: 70%;
+    
+
+}
+
+.caja-productos{
+    width: 90vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: solid 2px red;
+}
+
+.truck{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-truck{
+    color: var(--Verde);
+    border: solid 1px var( --Verde);
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+   
+}
+
+.valores{
+    display: flex;
+    flex-direction: row;
+   justify-content:flex-start;
+   
+}
+
+.valores > .precio{
+    padding-right: 20px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+
+}
+
+.valores > .descuento{
+    color: var(--Verde);
+    font-size: 16px;
+
+}
+
+.informacion-producto{
+    border-top: solid 1px var(--Gris-claro);
+    padding: 15px ;
+}
+
+.descripcion {
+
+    display: none;
+
+}
+
+
+
+.descripcion{
+
+    font-size: 16px;
+}
+
+/* Footer Principio */
+
+footer{
+    background-color: white;
+    padding: 40px 20px 10px;
+   
+    
+}
+
+
+.footer-article i{
+    color: #1259c3;
+    font-size: 2rem;
+    margin: 10px;
+ 
+}
+
+
+.footer-article{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.copyright{
+    display: flex;
+    text-align: center;
+    
+}
+
+
+/* .copyrigth {
+    font-weight: lighter;
+} */
+
+/* Footer Final */
+
+
+/* Media Queris */
+
+@media (min-width: 769px){
+
+/* media querys header */
+
+.nav-ofertas-cuenta{
+    display: flex;
+    padding-bottom: 20px;
+    width: 100vw;
+    }
+
+    .nav-ofertas-cuenta > .ofertas{
+        display: flex;
+        padding-right: 50px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .ofertas li a{
+        display: flex;
+        padding-left: 20px;
+    }
+
+    .nav-ofertas-cuenta >  .cuenta{
+        display: flex;
+        font-size: 13px;
+    }
+
+    .cuenta li a{
+        display: flex;
+        padding-left: 20px;
+
+    }
+
+    .fa-id-card, .fa-right-to-bracket, .fa-basket-shopping{
+        margin-left: 5px;
+
+
+    }
+
+    .img-logo-mercadoliebre{
+        width: 240px;
+    }
+
+    .menu-logo-buqueda-cuotas{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+
+    .barra-busqueda-mercadoliebre{
+        width: 30vw;
+        align-items: center;
+         
+
+    }
+    .barra-busqueda-mercadoliebre input {
+        width: 150px;
+        height: 25px;
+    }
+
+    .fa-magnifying-glass {
+        width: 25px;
+        height: 25px;
+        
+    }
+    
+
+    .burger-menu{
+        display: none;
+    }
+
+  /*  media queris main */
+
+ .cajas-de-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+ }
+  
+ 
+  .caja-productos{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 45%;
+    margin: 15px;
+    justify-content: space-evenly;
+    display: flex;
+    
+   
+    
+}
+
+.descripcion{
+    display: flex;
+    font-size: 16px;
+}
+
+
+/* Media queris 769 foooter */
+
+.footer-opcions{
+    display: flex;
+       
+   
+}
+
+.footer-article{
+    margin: 25px;
+}
+
+.copyright  {
+    display: block;
+    text-align: center;
+   
+    
+}
+
+}
+
+
+@media (min-width: 1280px){
+
+/* Media Queris header */
+
+.menu-logo-buqueda-cuotas{
+    display: flex;
+}
+
+.img-logo-mercadoliebre{
+    width: 30vw;
+  
+}
+
+.barra-busqueda-mercadoliebre{
+    width: 30vw;
+      
+}
+
+.barra-busqueda-mercadoliebre > input{
+    width: 25vw;
+    height: 5vh;
+    border: solid 1px black;
+       
+}
+
+.fa-magnifying-glass{
+    width: 2vw;
+    height: 5vh;
+    
+}
+
+.compra-en-cuotas{
+        width: 50vw;
+    
+}
+
+.nav-ofertas-cuenta{
+    display: flex;
+    justify-content:space-around;
+    
+            
+}
+.cuenta{
+    font-size: 4rem;
+}
+
+.ofertas{
+     margin-right: 450px;
+     font-size: 4rem;
+}
+
+.cajas-de-productos{
+    height: 30vw;
+    display: flex;
+  }
+
+
+
+.cajas-de-productos{
+    width: 100vw;
+    margin-right: 20px;
+}
+
+.caja-productos{
+    width: 20vw;
+}
+
+.caja-productos{
+        width: 20vw;
+        font-size: 10px;
+    
+    }
+
+.footer-article{
+    margin: 20px ;
+
+}
+
+#ultimas-visitas > h2, #ofertas > h2{
+    font-size: 32px;
+   
+}
+
+.copyright{
+         margin-top: 40px;
+    }
+
+}
+
+
+
+/* Register.html */
+
+#formulario-registro{
+    width: 20vw;
+    height: 90vh;
+    background-color: rgb(216, 214, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+
+}
+
+#datos-principales{
+    display: flex;
+    flex-direction: column;
+    border: transparent;
+}
+
+#nombre-apellido, #nombre-usuario, #email,
+ #fecha-nacimiento, #calendario, #domicilio{
+    width: 18vw;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    border: transparent;
+
+}
+
+#datos-perfil{
+    border: transparent;
+     margin-top: 10px;   
+}
+
+#perfil-usuario{
+    display: flex;
+    margin-right: 120px;
+}
+
+#comprador-vendedor, #vendedor-comprador{
+ margin-right: 10px;
+
+}
+
